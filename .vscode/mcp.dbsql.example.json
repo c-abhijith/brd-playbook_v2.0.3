@@ -1,0 +1,19 @@
+{
+  // Databricks SQL (read-only checks). Copy into .vscode/mcp.json (merge with other servers), put in your workspace host,
+  // then Command Palette → "MCP: List Servers" → dbsql → Start. VS Code asks for the token in its own password box.
+  // NEVER paste the token in chat or in this file. The token's identity must be read-only
+  // (USE CATALOG, USE SCHEMA, SELECT, BROWSE on the registered catalogs, nothing that writes anywhere).
+  // The server allows writes by default: ask your admin to switch on its read-only policy if possible.
+  // Newer workspaces may use https://<workspace-host>/ai-gateway/mcp-services/system.ai.dbsql (admin preview).
+  "servers": {
+    "dbsql": {
+      "type": "http",
+      "url": "https://<workspace-host>/api/2.0/mcp/sql",
+      "headers": { "Authorization": "Bearer ${input:dbx_token}" }
+    }
+  },
+  "inputs": [
+    { "id": "dbx_token", "type": "promptString", "password": true,
+      "description": "Databricks token for a READ-ONLY identity" }
+  ]
+}

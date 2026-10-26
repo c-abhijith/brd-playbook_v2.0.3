@@ -1,0 +1,1 @@
+Anything new after the memory is built, including memory-feedback.md files sent back from BRD workspaces. Then run /brd-memory-update (all new files together = one sub-version). Files stay here; the agent records which ones it has processed.

@@ -1,0 +1,20 @@
+{
+  "servers": {
+    "ado": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@azure-devops/mcp", "<your-organisation>",
+               "--authentication", "pat",
+               "-d", "core", "work", "work-items"],
+      "env": { "PERSONAL_ACCESS_TOKEN": "${input:ado_pat_b64}" }
+    }
+  },
+  "inputs": [
+    {
+      "id": "ado_pat_b64",
+      "type": "promptString",
+      "description": "Base64 of email:PAT (PAT scope: Work Items Read only)",
+      "password": true
+    }
+  ]
+}

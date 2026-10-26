@@ -1,0 +1,3 @@
+Published memory releases live here, one folder per version: memory-v1.0/, memory-v1.3/ …
+Memory workspace: /brd-memory-publish writes them. BRD workspace: put the release folder you received here and run /brd-memory-load
+(it loads the highest version). Never edit a release by hand.

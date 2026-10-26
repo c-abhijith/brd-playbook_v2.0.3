@@ -1,0 +1,1 @@
+Results of tools/metadata-extraction (CSV files) plus metadata-run-notes.md (when, by whom, which servers, databases and catalogs, which environment). Any environment is fine; it is recorded as a note. Large exports are split automatically by tools/prepare-sources/prepare_sources.py.

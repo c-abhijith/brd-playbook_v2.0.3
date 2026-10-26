@@ -1,0 +1,11 @@
+{
+  // VS Code offers these when the folder opens.
+  // Required: GitHub Copilot Chat (runs the agents). SQL Server (mssql): needed for direct SQL Server checks.
+  // Optional: Mermaid diagrams in the Markdown preview.
+  // Databricks, Genie and Azure DevOps are MCP servers (.vscode/mcp.json), not extensions.
+  "recommendations": [
+    "github.copilot-chat",
+    "ms-mssql.mssql",
+    "bierner.markdown-mermaid"
+  ]
+}

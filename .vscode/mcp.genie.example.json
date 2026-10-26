@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "genie": {
+      "type": "http",
+      "url": "https://<workspace-host>/api/2.0/mcp/genie/<genie_space_id>",
+      "headers": { "Authorization": "Bearer ${input:dbx_token}" }
+    }
+  },
+  "inputs": [
+    {
+      "id": "dbx_token",
+      "type": "promptString",
+      "description": "Databricks token for a READ-ONLY identity",
+      "password": true
+    }
+  ]
+}

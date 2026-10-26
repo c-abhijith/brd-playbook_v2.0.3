@@ -1,0 +1,1 @@
+Optional: client BRD templates as Markdown, one per document type (functional.md, technical.md, summary.md). Without them, the detailed default templates in playbook/templates/ are used. Word templates: tools/word-conversion/README.md.
